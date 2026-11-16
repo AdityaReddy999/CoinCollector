@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://d3b3tkjp5m8ou"]
+
+[ext_resource type="Script" uid="uid://eulid4bqljrf" path="res://goomba.gd" id="1_cnnw4"]
+[ext_resource type="Texture2D" uid="uid://ci07nyghuryok" path="res://Extra/thumb-350-325111.webp" id="2_uj333"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6u8ts"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=398309409]
+
+[node name="Goomba" type="CharacterBody2D" parent="." unique_id=822675518]
+script = ExtResource("1_cnnw4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Goomba" unique_id=506255724]
+shape = SubResource("RectangleShape2D_6u8ts")
+
+[node name="Sprite2D" type="Sprite2D" parent="Goomba" unique_id=77568859]
+position = Vector2(-105.5, 92)
+scale = Vector2(0.39714286, 0.47428572)
+texture = ExtResource("2_uj333")
+
+[node name="WallRay" type="RayCast2D" parent="Goomba" unique_id=1543563523]
+target_position = Vector2(-12, 0)
+
+[node name="FloorRay" type="RayCast2D" parent="Goomba" unique_id=56922579]
+target_position = Vector2(0, 24)

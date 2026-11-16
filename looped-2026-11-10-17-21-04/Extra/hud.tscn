@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://75qpv64l1d8a"]
+
+[ext_resource type="Script" uid="uid://qtjhjmxxika4" path="res://Extra/hud.gd" id="1_37p78"]
+
+[node name="HUD" type="CanvasLayer" unique_id=266357461]
+script = ExtResource("1_37p78")
+
+[node name="Label" type="Label" parent="." unique_id=973990440]
+offset_right = 190.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Coins: 
+"
+
+[node name="Label2" type="Label" parent="." unique_id=267929260]
+offset_left = 4.0
+offset_top = 57.0
+offset_right = 315.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Jump/double jump - up arrow
+Right - right arrow
+Left - left arrow
+Directional Dash - hold direction + space"
